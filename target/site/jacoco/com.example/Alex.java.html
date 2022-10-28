@@ -2,27 +2,30 @@
 
 import java.util.List;
 
-public class Alex extends Lion{
+public class Alex extends Lion {
     Feline feline;
-    public Alex (Feline feline) throws Exception {
-<span class="fc" id="L8">        super(&quot;Самец&quot;, feline);</span>
-<span class="fc" id="L9">        this.feline = feline;</span>
 
-<span class="fc" id="L11">    }</span>
-    public List&lt;String&gt; getFriends(){
-<span class="fc" id="L13">       return  List.of(&quot;Мартин&quot;, &quot;Глория&quot;, &quot;Мелман&quot;);</span>
+    public Alex(Feline feline) throws Exception {
+<span class="fc" id="L9">        super(&quot;Самец&quot;, feline);</span>
+<span class="fc" id="L10">        this.feline = feline;</span>
+
+<span class="fc" id="L12">    }</span>
+
+    public List&lt;String&gt; getFriends() {
+<span class="fc" id="L15">        return List.of(&quot;Мартин&quot;, &quot;Глория&quot;, &quot;Мелман&quot;);</span>
     }
+
     public String getPlaceOfLiving() {
-<span class="fc" id="L16">        return &quot;Нью-Йоркский зоопарк&quot;;</span>
+<span class="fc" id="L19">        return &quot;Нью-Йоркский зоопарк&quot;;</span>
     }
 
     @Override
     public int getKittens() {
-<span class="fc" id="L21">        return 0;</span>
+<span class="fc" id="L24">        return 0;</span>
     }
 
-    public String getFamily(){
-<span class="fc" id="L25">        return feline.getFamily();</span>
+    public String getFamily() {
+<span class="fc" id="L28">        return feline.getFamily();</span>
     }
 
 }
